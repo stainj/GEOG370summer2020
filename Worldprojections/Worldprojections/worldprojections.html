@@ -9,45 +9,55 @@
     <h1>In this project I learned how to display images in different projections</h1>
     
     <!-- <h2 style="color:red">Describe in your own words how you displayed the map in different projections using QGIS</h2> -->
-    <p>You can write a paragraph here</p>
+    <p>I used a vector that contained polygons of all the countries called ne_10m_admin_0_countries and a plugin called indicatrix mapper, then I manually changed the Coordiante Reference System (CRS) to display the map in different projections  </p>
     
     <h2>WGS84 Projection</h2>
-    <h3>Some observations</h3>
+    <h3>Preserves the shape of the countries closer to the equater, but distorts the size closer to the poles</h3>
     <a href=".//maps/4326.png">
     <img src=".//maps/4326.png" alt="WGS84" width='500px'>
     </a>
     <h2>Aitoff Projection</h2>
-    <h3>Some observations</h3>
+    <h3>Preserves the area closer to the equater, but distorts the shape of the countries closer to the poles </h3>
     <a href=".//maps/54043.png">
     <img src=".//maps/54043.png" alt="Aitoff" width='500px'>
     </a>
     <h2>Pseudo Mercator</h2>
-    <h3>Some observations</h3>
-    <a href="./maps/Pseudo Mercator.png">
-    <img src=".//maps/Pseudo Mercator.png" alt="Pseudo Mercator" width='500px'>
+    <h3>Preserves the shape of countries, but distorts the size of the countries closer to the poles</h3>
+    <a href="./maps/epsg 3857.png">
+    <img src=".//maps/epsg 3857.png" alt="3857" width='500px'>
     </a>
     <h2>Winkel Tripel</h2>
-    <h3>Some observations</h3>
-    <a href="./maps/Winkel Tripel.png">
-    <img src=".//maps/Winkel Tripel.png" alt="Winkel Tripel" width='500px'>
+    <h3>Creates a balance between the size and shape of the countries, but does not show the of distance between countries accuratly</h3>
+    <a href="./maps/epsg 53018.png">
+    <img src=".//maps/epsg 53018.png" alt="53018" width='500px'>
     </a>
-    <h2>Lambert's Cylindrical</h2>
-    <h3>Some observations</h3>
-    <a href="./maps/Lambert's Cylindrical.png">
-    <img src=".//maps/Lambert's Cylindrical.png" alt="Lambert's Cylindrical" width='500px'>
+    <h2>World Cylindrical Equal Area</h2>
+    <h3>As the title suggest it preserves the total area, but does not accuratly show the shape of the countries</h3>
+    <a href="./maps/epsg 54034.png">
+    <img src=".//maps/epsg 54034.png" alt="54034" width='500px'>
     </a>
     <h2>Conic Projection</h2>
-    <h3>Some observations</h3>
-    <a href="./maps/Conic.png">
-    <img src=".//maps/Conic.png" alt="Conic" width='500px'>
+    <h3>The area of the countries is more accurate closer to the north pole and distorts the shape of the countries further away from the north pole</h3>
+    <a href="./maps/epsg 54027.png">
+    <img src=".//maps/epsg 54027.png" alt="54027" width='500px'>
     </a>
     <h2>Azimuthal Projection</h2>
-    <h3>Some observations</h3>
-    <a href="./maps/Azimuthal.png">
-    <img src=".//maps/Azimuthal.png" alt="Azimuthal" width='500px'>
+    <h3>Preserves the direction and does the the same thing as a conic projection </h3>
+    <a href="./maps/epsg 102016.png">
+    <img src=".//maps/epsg 102016.png" alt="102016" width='500px'>
+    </a>
+    <h2>World Goode Homolosine</h2>
+    <h3>Preserves the area closer to the equater then distorts the shape closer to the poles</h3>
+    <a href="./maps/epsg 54052.png">
+    <img src=".//maps/epsg 54052.png" alt="54052" width='500px'>
+    </a>
+    <h2>World Equidistant Cylindrical</h2>
+    <h3>As the title suggest for this projection it preserves the distance, but not the countries closer to the poles </h3>
+    <a href="./maps/epsg 4087.png">
+    <img src=".//maps/epsg 4087.png" alt="4087" width='500px'>
     </a>
     <!-- <h2 style="color:red">Now, you should <u>add the following projections on your own:</u></h2> -->
-    <h3>EPSG: 3857, 53018, 54034, 54027, 102016, and two additional projections that you choose.</h3>
+    <!-- <h3>EPSG: 3857, 53018, 54034, 54027, 102016, and two additional projections that you choose.</h3> -->
     <p></p>
     <h2>Data used for this project</h2>
     <a href="https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip"> Download Natrual Earth 1:10m Cultural Vector </a>
