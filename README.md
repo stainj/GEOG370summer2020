@@ -1,1 +1,0 @@
-# GEOG370summer2020
